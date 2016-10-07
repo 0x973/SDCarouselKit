@@ -1,10 +1,12 @@
-# SDCarouselKit
-Powerful Carousel
-## 强大的图片轮播器
-多功能满足各方需求,详情使用请下载后运行Demo
-详细功能如下:
+//
+//  SDCarouselKit.h
+//
+//  Created by Any on 02/10/2016.
+//  Copyright © 2016 Any. All rights reserved.
+//
 
-```
+#import <UIKit/UIKit.h>
+@class SDCarouselKit;
 /**
  *  Block
  */
@@ -177,5 +179,8 @@ UIImage *gifImageNamed(NSString *imageName);
  *  清除沙盒中的图片缓存
  */
 + (void)clearDiskCache;
-```
+
+
+@end
+
 

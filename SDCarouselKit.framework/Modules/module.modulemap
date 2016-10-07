@@ -1,0 +1,6 @@
+framework module SDCarouselKit {
+  umbrella header "SDCarouselKit.h"
+
+  export *
+  module * { export * }
+}
