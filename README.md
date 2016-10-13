@@ -4,6 +4,8 @@ Powerful Carousel
 多功能满足各方需求,详情使用请下载后运行Demo
 详细功能如下:
 
+
+## 同时支持代理和block  切记二选一
 ```
 /**
  *  Block
@@ -24,6 +26,7 @@ typedef void(^ClickBlock)(NSInteger index);
 - (void)carouselView:(SDCarouselKit *)carouselView clickImageAtIndex:(NSInteger)index;
 
 @end
+## 改变pageControl的位置 支持多种显示模式
 //显示pageControl的位置
 typedef enum {
     PositionNone,           //默认值 == PositionBottomCenter
@@ -34,7 +37,7 @@ typedef enum {
     PositionBottomRight     //右下
 } PageControlPosition;
 
-
+## 改变切换图片的模式  支持两种显示模式
 //切换图片的样式
 typedef enum {
     ChangeModeDefault,  //轮播滚动
@@ -42,6 +45,7 @@ typedef enum {
 } ChangeMode;
 
 
+## 如果要加入本地gif图片请在图片数组里使用以下方法 否则没有动画效果
 /**
  *  C语言函数，创建本地gif图片
  *  本地gif图片请使用该函数创建，否则gif无动画效果
@@ -172,6 +176,8 @@ UIImage *gifImageNamed(NSString *imageName);
  */
 - (void)setDescribeTextColor:(UIColor *)color font:(UIFont *)font bgColor:(UIColor *)bgColor;
 
+
+## 类方法 轻松清除当前控件的缓存(主要为网络加载图片产生的图片缓存)
 
 /**
  *  清除沙盒中的图片缓存
